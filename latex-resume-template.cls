@@ -72,9 +72,23 @@
 }
 
 % Job header.
-\newcommand{\job}[3]{
-\noindent {\bf #1} \hfill {\bf #2} $\vert$ #3\\
-\vspace{-6mm}
+% First argument: Company name
+% Second argument: Skills
+% Third argument: Date
+% Title argument: Date
+\newcommand{\job}[4]{
+  \subHeading{#1}{#2}{#3}
+  \noindent \emph{#4} \\
+  \vspace{-6mm}
+}
+
+\newcommand{\school}[3]{
+  \subHeading{#1}{#2}{#3}  
+  \vspace{-6mm}
+}
+
+\newcommand{\subHeading}[3]{
+  \noindent {\bf #1} \hfill {\bf #2} $\vert$ #3\\
 }
 
 % Project information
