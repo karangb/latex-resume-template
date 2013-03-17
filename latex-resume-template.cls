@@ -1,4 +1,4 @@
-\ProvidesClass{onkursen-resume}[2013/03/12 Onkur Sen Resume Class]
+\ProvidesClass{latex-resume-template}[2013/03/12 Onkur Sen Resume Class]
 
 \NeedsTeXFormat{LaTeX2e}
 \PassOptionsToClass{10pt}{article}
