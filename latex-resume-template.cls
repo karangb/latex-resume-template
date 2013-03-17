@@ -6,6 +6,7 @@
 
 \RequirePackage{mdwlist}
 \RequirePackage{hyperref}
+\RequirePackage{fancyhdr}
 
 \RequirePackage[compact]{titlesec}
 \titlespacing{\section}{0pt}{*0}{*0}
@@ -32,6 +33,29 @@
   \begin{center}
   \end{center}
 }
+
+\pagestyle{fancy}
+
+% First argument: address
+% Second argument: phone number
+\newcommand{\address}[2]{
+  \lhead{#1\\#2}
+}
+
+% First argument: email address
+% Second argument: github page
+\newcommand{\email}[2]{
+  \rhead{#1\\#2}
+}
+
+% First argument: name
+\newcommand{\name}[1]{
+  \chead{{\bf \huge #1}}
+}
+
+\lfoot{}
+\cfoot{}
+\rfoot{}
 
 % Academic honor
 % First argument: honor name
